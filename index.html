@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Home Page -->
+  <div id="home-page" style="display: block;">
+    <!-- User Details Section -->
+    <div id="user-details">
+		<img src="logo.png" class="logo-image" alt="Logo">
+
+		<!-- <img src="backgraud.avif" class="background-image" alt="Background"> -->
+      <h1>Welcome to the Quiz App</h1>
+      <input type="text" id="name" placeholder="Enter your name">
+      <button id="enter-btn">Enter</button>
+    </div>
+	
+	
+    <!-- Category Selection Section -->
+  <div>
+	<h2>Category Selection Section</h2>
+   <div id="category-selection" style="display:none;">
+   </div>	
+	</div>
+
+	<div><button id="calendar-btn"> Calender</button></div>
+  <div>
+
+    <button id="clock-btn"> Clock</button>
+  </div>
+
+	<div><button id="age-btn"> Problems on Ages</button>
+  </div>
+  
+	<button id="number-series-btn">  Number</button>
+
+  <!-- <div>
+     <button id ="nxt-btn">Next Question</button>
+    </div> -->
+</div>
+  <!-- Quiz Page -->
+  <div id="quiz-page" style="display:none;">
+    <div id="quiz-header">
+      <div id="time">Time: 00:00</div>
+      <div id="score">Score: 0</div>
+    </div>
+    <div id="question-number"></div>
+    <div id="question-text"></div>
+    <div id="options"></div>
+    <div><button id="next-btn">Next Question</button></div>
+    <button id="next-btn">Next Question</button>
+  </div>
+
+  <!-- Result Page -->
+  <div id="result-page" style="display: none;">
+    <h2>Quiz Results</h2>
+    <p id="result-name">Name: </p>
+    <p id="result-time">Total Time Taken: </p>
+    <p id="result-questions">Total Questions Attempted: </p>
+    <p id="result-correct">Correct Answers: </p>
+    <p id="result-wrong">Wrong Answers: </p>
+    <p id="result-score">Score: </p>
+    <button id="start-again-btn">Start Again</button>
+    <button id="go-home-btn">Go to Home</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('background\\ 33.jpg'); */
+    background-size: cover;  /* Makes sure the background covers the entire screen */
+    background-position: center;
+    background-repeat: no-repeat;
+  background-image: url("backgraund\ 33.jpg");
+}
+
+
+
+.home-page, .quiz-page, .result-page {
+    width: 80%;
+    max-width: 600px; /* Limits the width for better centering */
+    margin: 0; /* Remove any default margins */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Center text */
+    padding: 20px; /* Add padding for some spacing around content */
+    background: rgba(255, 255, 255, 0.8); /* Optional: Add a slight background to make text stand out */
+    border-radius: 10px; /* Optional: Round corners */
+}
+
+.welcome-note {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.name-textbox, .enter-button, .category-section {
+    margin-bottom: 20px;
+}
+
+.category-section {
+    color: #4CAF50;
+}
+
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    color: #e9e3e3;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    
+    
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 100;
+    
+    border: 1px solid transparent;
+    border-radius: 1px;
+    height: 25px;
+    width: inherit;
+    line-height: 34px;
+    grid-auto-flow: column;
+    font-family: 'Times New Roman', Times, serif ;
+    
+    background-color: transparent;
+    transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+    padding: 0 18px;
+    :hover {
+        color: #f3f1f0;
+        background-color: #d9d7cd;
+    }
+
+}
+button:hover {
+    background-color: #ddc5ce;
+    justify-items: center;
+}
+
+
+.timer, .score {
+    position: absolute;
+    top: 10px;
+    font-weight: bold;
+    font-size: 2px;
+}
+
+.timer {
+    left: 10px;
+}
+
+.score {
+    right: 10px;
+}
+
+.question-number {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #e9e3e3;
+}
+
+.question-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.option-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.next-question-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+img {
+    height: 200px;
+    width: 250px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 10px;
+}
